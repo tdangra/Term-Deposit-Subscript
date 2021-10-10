@@ -23,7 +23,7 @@ sapply(Bank_Customer, function(x) sum(is.na(x)))
 # The column "y" is renamed to "termdeposit" to make the charts and data more readable and comparable.
 names(Bank_Customer)[names(Bank_Customer)=="y"] <-"termdeposit"
 
-#The columns emp.var.rate, euribor3m, cons.price.IDX, cons.conf.idx, and nr.employed are dropped 
+# The columns emp.var.rate, euribor3m, cons.price.IDX, cons.conf.idx, and nr.employed are dropped 
 Bank_Customer <- Bank_Customer[,-c(16:20)]
 
 # To remove the extra space
